@@ -1,8 +1,8 @@
 html, body{
     height: 100%;
     padding: 10px;
-}
 
+}
 
 header > span > ul > li > a {
     text-decoration: none;
@@ -23,11 +23,18 @@ ul{
     right: 0;
     z-index: -1;
 }
-.conhecimentos > p{
+.conhecimentos{
     text-align: center;
+    width: 100%;
+    display: inline;
 }
-#imagens{
+.descricao{
+    width: 100%;
+}
+.imagens{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
 .main{
     display: flex;
@@ -35,7 +42,6 @@ ul{
 }
 .lados{
     width: 50%;
-    display: flex;
     position: relative;
     height: 100%;
     margin-top: 5px;
@@ -51,6 +57,7 @@ ul{
 .individual{
     width: 18vh;
     position: relative;
+    padding-top: 5px;
 }
 .imagem{
     position: absolute;
@@ -62,9 +69,62 @@ ul{
     max-width: 50%;
     bottom: 0;
 }
+#move-front{
+    padding-top: 15vh;
+}
 
-@media (max-width: 730px){
+
+@media (max-width: 1060px){
+    .lados{
+        width: 100%;
+    }
     .imagem{
         visibility: hidden;
+    }
+    #move-front{
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 525px) {
+    #imagem-bolha{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .imagens{
+        text-align: center;
+    }
+    
+}
+.main-cards{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+.cards{
+    margin: 0 auto;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.ver-mais-cards, .ver-mais-cards > a{
+    background-color: #1E1E1E;
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+body{
+
+    animation: fundocolor infinite;
+    animation-duration: 5s;
+}
+@keyframes fundocolor {
+    0%{
+        background: linear-gradient(45deg, #68966F, #FFFFFF, #E1FCE5);
+        background:scroll;
     }
 }
