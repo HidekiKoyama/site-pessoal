@@ -1,10 +1,19 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+body, html{
     height: 100%;
     padding: 10px;
+    font-family: 'Open Sans', sans-serif;
 
 }
-
-header > span > ul > li > a {
+header{
+    position: fixed;
+    z-index: +2;
+    background-color: #e1fce59c;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+}
+header > nav > ul > li > a {
     text-decoration: none;
     color: #1E1E1E;
 }
@@ -12,6 +21,11 @@ li{
     list-style: none;
     padding-right: 5px;
     padding-left: 5px;
+    transition: 1s;
+    border-radius: 5px;
+}
+li:hover{
+    background-color: #68966F;
 }
 ul{
     margin: 0 auto;
@@ -24,7 +38,7 @@ ul{
     z-index: -1;
 }
 .conhecimentos{
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: inline;
 }
@@ -70,15 +84,14 @@ ul{
     bottom: 0;
 }
 #move-front{
-    padding-top: 15vh;
+    padding-top: 20vh;
 }
-
 
 @media (max-width: 1060px){
     .lados{
         width: 100%;
     }
-    .imagem{
+    .imagem, #imagem-bolha, #imagem-bolha-final{
         visibility: hidden;
     }
     #move-front{
@@ -87,19 +100,13 @@ ul{
 }
 
 @media (max-width: 525px) {
-    #imagem-bolha{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-    }
     .imagens{
         text-align: center;
     }
     
 }
 .main-cards{
-    margin-top: 40px;
+    margin-top: 90px;
     width: 100%;
     display: flex;
     flex-flow: wrap;
@@ -109,6 +116,7 @@ ul{
     background-color: #1E1E1E;
     border-radius: 15px;
     overflow: hidden;
+    margin-top: 15px;
 }
 .ver-mais-cards, .ver-mais-cards > a{
     background-color: #1E1E1E;
@@ -118,7 +126,7 @@ ul{
     text-decoration: none;
 }
 body{
-
+    
     animation: fundocolor infinite;
     animation-duration: 5s;
 }
@@ -128,3 +136,71 @@ body{
         background:scroll;
     }
 }
+
+@media (max-width: 824px) {
+    .imagem-final{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #sobre-mim{
+        padding-top: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+#sobre-mim{
+    padding-top: 20vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.pai-redes{
+    justify-content: center;
+    flex-flow: wrap;
+    display: flex;
+}
+.redes-sociais{
+    overflow: hidden;
+    text-align: center;
+}
+.redes-sociais > li{
+    width: fit-content;
+    
+}
+.descricao{
+    width: 70%;
+}
+.compo-imagem{
+    position: relative;
+    text-align: right;
+}
+.clipse{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.imagem-final{
+    text-align: right;
+    width: fit-content;
+}
+#logo-eu{
+    width: 230px;
+}
+.destaque-hab{
+    color:#68966F;
+}
+.main-cards-final{
+    padding-top: 50px;
+    width: 100%;
+    flex-flow: wrap;
+    display: flex;
+    text-align: center;
+}
+.cards-final{
+    margin: 0 auto;
+}
+.cards-final > a > img{
+    width: 90px;
+}
+

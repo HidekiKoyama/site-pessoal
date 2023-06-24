@@ -8,13 +8,13 @@
     <title>Login</title>
 </head>
 <header>
-    <span>
+    <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#imagem-bolha">Home</a></li>
+            <li><a href="#redireciona-proj">Projetos</a></li>
+            <li><a href="#logo-eu">Sobre mim</a></li>
         </ul>
-    </span>
+    </nav>
 </header>
 <body>
     <img src="static/main/img/e.png" alt="" id="imagem-bolha">
@@ -53,6 +53,7 @@
                     <div class="conhecimentos">
                         <p>Para front-end</p>
                     </div>
+                    <div id="projetos"></div>
                     <div class="imagens">
                         <div class="main-img">
                             <div class="individual">
@@ -77,7 +78,7 @@
             <div id="move-front">
                 <div class="descricao">
                     <div class="conhecimentos">
-                        <p>Conhecimentos não relcionados</p>
+                        <p>Conhecimentos não relacionados</p>
                     </div>
                     <div class="imagens">
                         <div class="main-img">
@@ -111,6 +112,7 @@
                     <a href="#">Ver mais</a>
                 </div>
             </div>
+            <p id="redireciona-proj"></p>
             <div class="cards">
                 <div class="imagem-ilustrativa-card">
                     <img src="https://i.pinimg.com/originals/e5/94/34/e59434c84ca59869537899717a159cac.gif" alt="">
@@ -120,11 +122,43 @@
                 </div>
             </div>
         </div>
-        <div>
-            teste <br>
-            teste <br>
-            teste <br>
-'            teste <br>'
+        <div id="sobre-mim">
+            <div class="descricao">
+                <p>Estudante de Análise e desenvolvimento de Sistema!   <br>
+
+                    Atualmente trabalho no setor de contabilidade, resolvendo quesões de criação e manutenção de Macros (Excel)<br>
+                    
+                    Resolvendo problemas de conciliação de dados e gerando relatórios personalizado ultilizando do <a class="destaque-hab">SQL</a> e banco <a class="destaque-hab">SQLSERVER</a> para tal.<br>
+                    
+                    Estudando atualmente para ser um desenvolvedor fullstack.<br>
+                    
+                    Já trabalhei com projetos em equipe, formando assim uma base sobre como planejar e desenvolver soluções.<br>
+                    Usando <a class="destaque-hab">Python - Framework Django</a> para o back-end,  <a class="destaque-hab">PostgreSQL</a> como banco de dados e <a class="destaque-hab">HTML, CSS e JavaScript</a> no front-end <br>
+                    </p>
+            </div>
+            <div class="campo-imagem">
+                <div class="imagem-final">
+                    <img src="static/main/img/imagem-padrao.png" alt="" id="logo-eu">
+                    <p>Hideki Koyama</p>
+                </div>
+                <div class="clipse">
+                    <img src="static/main/img/Ellipse 5.png" alt="" id="imagem-bolha-final">
+                </div>
+            </div>
+            <div class="main-cards-final">
+                <div class="cards-final">
+                    <label for="">Hideki Koyama</label><br>
+                    <a href="javascript:void(0)"; onclick="window.open('https://github.com/HidekiKoyama', '_blank')" ><img src="static/main/img/linkedin.png" alt="logo-linkedin"></a>
+                </div>
+                <div class="cards-final">
+                    <label for="">Instagram</label><br>
+                    <a href="javacrip:void(0)"; onclick="window.open('https://www.instagram.com/hideki_oficial/', '_blank')"><img src="static/main/img/instagram.png" alt="logo-instagram"></a>
+                </div>
+                <div class="cards-final">
+                    <label for="">GitHub</label><br>
+                    <a href="https://github.com/HidekiKoyama"><img src="static/main/img/github.png" alt="logo-github"></a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
