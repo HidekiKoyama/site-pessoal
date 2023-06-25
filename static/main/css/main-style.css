@@ -3,6 +3,7 @@ body, html{
     height: 100%;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 
 }
 header{
@@ -86,25 +87,6 @@ ul{
 #move-front{
     padding-top: 20vh;
 }
-
-@media (max-width: 1060px){
-    .lados{
-        width: 100%;
-    }
-    .imagem, #imagem-bolha, #imagem-bolha-final{
-        visibility: hidden;
-    }
-    #move-front{
-        padding-top: 0px;
-    }
-}
-
-@media (max-width: 525px) {
-    .imagens{
-        text-align: center;
-    }
-    
-}
 .main-cards{
     margin-top: 90px;
     width: 100%;
@@ -126,28 +108,8 @@ ul{
     text-decoration: none;
 }
 body{
-    
     animation: fundocolor infinite;
     animation-duration: 5s;
-}
-@keyframes fundocolor {
-    0%{
-        background: linear-gradient(45deg, #68966F, #FFFFFF, #E1FCE5);
-        background:scroll;
-    }
-}
-
-@media (max-width: 824px) {
-    .imagem-final{
-        text-align: center;
-        margin: 0 auto;
-    }
-    #sobre-mim{
-        padding-top: 10px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
 }
 #sobre-mim{
     padding-top: 20vh;
@@ -203,4 +165,48 @@ body{
 .cards-final > a > img{
     width: 90px;
 }
+@media (max-width: 824px) {
+    .imagem-final{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #sobre-mim{
+        padding-top: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .lados{
+        width: 100%;
+    }
+    .imagem, #imagem-bolha, #imagem-bolha-final{
+        visibility: hidden;
+    }
 
+    .imagens{
+        text-align: center;
+        width: 100%;
+    }
+    .lados{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        margin-top: 5px;
+    }
+    .individual{
+        position: relative;
+        padding-top: 5px;
+        width: fit-content;
+    }   
+    .descricao, .conhecimentos{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@keyframes fundocolor {
+    0%{
+        background: linear-gradient(45deg, #68966F, #FFFFFF, #E1FCE5);
+        background:scroll;
+    }
+}
