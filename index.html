@@ -1,185 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/main/css/main-style.css">
-    <script src="static/main/js/main-script.js"></script>
-    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand&family=Open+Sans:wght@600&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main/css/styles.css">
+    <title>Seja bem-vindo(a)</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#projetos" id="link-proj">Projetos</a></li>
-            <li><a href="#logo-eu">Sobre mim</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
-    <img src="static/main/img/e.png" alt="" id="imagem-bolha">
-    <div class="main" margin="5px">
-        <div class="lados">
-            <div class="descricao">
-                <h1>Dev. <br>Hideki,</h1>
-                <p>Desenvolvendo nas seguintes tecnologias</p>
-                <div class="conhecimentos">
-                    <p>Para back-end</p>
-                </div>
-                <div class="imagens">
-                    <div class="main-img">
-                        <div class="individual">
-                            <img src="static/main/img/python.png" alt="icon-python" class="main-box-img">
-                            <img src="static/main/img/django.png" alt="icon-django" class="secund-box-img">
-                        </div>
-                    </div>
-                    <div class="main-img">
-                        <div class="individual">
-                            <img src="static/main/img/sql.png" alt="icon-sql" class="main-box-img">
-                            <img src="static/main/img/postgre.png" alt="icon-postgresql" class="secund-box-img">
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu">
+                <a href="#" class="menu-item">Projetos</a>
+                <a href="#" class="menu-item">Contato</a>
             </div>
         </div>
-        <div class="lados">
-            <div class="imagem">
-                <img src="static/main/img/animation.png" alt="template-menina-estudando" id="menina-template">
-            </div>
+        <div id="carousel-container">
+            <p class="carousel-text visible">Trabalhe com eficiência...</p>
+            <p class="carousel-text">Otimize processos...</p>
+            <p class="carousel-text">Ganhe tempo!</p>
         </div>
-        <div class="lados">
-            <div id="move-front">
-                <div class="descricao">
-                    <div class="conhecimentos">
-                        <p>Para front-end</p>
-                    </div>
-                    <div class="imagens">
-                        <div class="main-img">
-                            <div class="individual">
-                                <img src="static/main/img/html.png" alt="icon-python" class="main-box-img">
-                            </div>
-                        </div>
-                        <div class="main-img">
-                            <div class="individual">
-                                <img src="static/main/img/css-3.png" alt="icon-sql" class="main-box-img">
-                            </div>
-                        </div>
-                        <div class="main-img">
-                            <div class="individual">
-                                <img src="static/main/img/js.png" alt="icon-sql" class="main-box-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="lados">
-            <div id="move-front">
-                <div class="descricao">
-                    <div class="conhecimentos">
-                        <p>Conhecimentos não relacionados</p>
-                    </div>
-                    <div class="imagens">
-                        <div class="main-img">
-                            <div class="individual">
-                                <img src="static/main/img/powerbi.png" alt="icon-python" class="main-box-img">
-                            </div>
-                        </div>
-                        <div class="main-img">
-                            <div class="individual">
-                                <img src="static/main/img/figma.png" alt="icon-sql" class="main-box-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-cards" id="cards-geral">
-            <div class="cards">
-                <div class="imagem-ilustrativa-card">
-                    <img src="static/main/img/em breve.png" alt="" width="390px">
-                </div>
-                <div class="ver-mais-cards">
-                    <a href="#">Ver mais</a>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="imagem-ilustrativa-card">
-                    <img src="static/main/img/em breve.png" alt="" width="390px">
-                </div>
-                <div class="ver-mais-cards">
-                    <a href="#">Ver mais</a>
-                </div>
-            </div>
-            <p id="redireciona-proj"></p>
-            <div class="cards">
-                <div class="imagem-ilustrativa-card">
-                    <img src="static/main/img/em breve.png" alt="" width="390px">
-                </div>
-                <div class="ver-mais-cards">
-                    <a href="#">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div id="projetos"></div>
-        <div id="sobre-mim">
-            <div class="descricao">
-                <p>Estudante de Análise e desenvolvimento de Sistema! <br>
-
-                    Atualmente trabalho no setor de contabilidade, resolvendo quesões de criação e manutenção de Macros
-                    (Excel)<br>
-
-                    Resolvendo problemas de conciliação de dados e gerando relatórios personalizado ultilizando do <a
-                        class="destaque-hab">SQL</a> e banco <a class="destaque-hab">SQLSERVER</a> para tal.<br>
-
-                    Estudando atualmente para ser um desenvolvedor fullstack.<br>
-
-                    Já trabalhei com projetos em equipe, formando assim uma base sobre como planejar e desenvolver
-                    soluções.<br>
-                    Usando <a class="destaque-hab">Python - Framework Django</a> para o back-end, <a
-                        class="destaque-hab">PostgreSQL</a> como banco de dados e <a class="destaque-hab">HTML, CSS e
-                        JavaScript</a> no front-end <br>
-                </p>
-            </div>
-            <div class="campo-imagem">
-                <div class="imagem-final">
-                    <img src="static/main/img/imagem-padrao.png" alt="" id="logo-eu">
-                    <p>Hideki Koyama</p>
-                </div>
-                <div class="clipse">
-                    <img src="static/main/img/Ellipse 5.png" alt="" id="imagem-bolha-final">
-                </div>
-            </div>
-            <div class="main-cards-final">
-                <div class="cards-final">
-                    <label for="">Hideki Koyama</label><br>
-                    <a href="#linkedin" ;
-                        onclick="window.open('https://www.linkedin.com/in/hideki-koyama', '_blank')"><img
-                            src="static/main/img/linkedin.png" alt="logo-linkedin"></a>
-                </div>
-                <div class="cards-final">
-                    <label for="">Instagram</label><br>
-                    <a href="#instagram" ;
-                        onclick="window.open('https://www.instagram.com/hideki_oficial/', '_blank')"><img
-                            src="static/main/img/instagram.png" alt="logo-instagram"></a>
-                </div>
-                <div class="cards-final">
-                    <label for="">GitHub</label><br>
-                    <a href="#Github" ; onclick="window.open('https://github.com/HidekiKoyama', '_blank')"><img
-                            src="static/main/img/github.png" alt="logo-github"></a>
-                </div>
-            </div>
+        <div class="main">
+            <h1 id="background-name">Hideki</h1>
         </div>
     </div>
+    <div class="container">
+        <h1>Teste</h1>
+    </div>
+    <script src="static/main/js/main.js"></script>
 </body>
 
 </html>
-<!-- 
-https://www.flaticon.com/br/
-
-https://icons8.com.br/
-
-https://storyset.com/
--->

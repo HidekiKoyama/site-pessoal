@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;    
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#background-name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #B4B4B4;
+    transition: font-size 1s ease-in-out;
+    font-family: 'Khand', sans-serif;
+}
+
+#carousel-container {
+    text-align: left;
+    color: #B4B4B4;
+    font-family: 'khand', sans-serif;
+    font-size: 60px;
+}
+
+.carousel-text {
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 30%;
+    opacity: 0;    
+    white-space: nowrap; /* Impede que as frases quebrem em várias linhas */
+    animation: slideIn 1s forwards;
+    
+}
+
+.visible {
+    display: block;
+}
+
+@keyframes slideIn {
+    to {
+        left: 10%;
+        opacity: 1;
+        color: #1E1E1E;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E1E1E; 
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); /* Sombra no fundo do menu */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    color: #ffffff; /* Cor do texto do menu */
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Khand', sans-serif;
+    transition: color 0.3s; /* Transição suave na cor do texto */
+}
+
+.menu-item:hover {
+    color: #B4B4B4; /* Cor do texto ao passar o mouse sobre o menu */
+}
